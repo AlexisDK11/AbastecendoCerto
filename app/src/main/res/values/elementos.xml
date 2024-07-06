@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combustiveis" >
+        <item > Etanol </item>
+        <item > Etanol aditivada</item>
+        <item > Gasolina comum </item>
+        <item > Gasolina aditivada </item>
+        <item > Gasolina premium </item>
+        <item > Diesel S-500</item>
+        <item > Diesel S-10</item>
+        <item > Diesel aditivado</item>
+        <item > Diesel premium</item>
+    </string-array>
+</resources>

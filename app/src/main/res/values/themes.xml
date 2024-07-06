@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AbastecendoCerto" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorControlNormal">@color/blue</item> <!-- Cor da linha do EditText -->
+        <item name="colorControlActivated">@color/blue</item> <!-- Cor da linha do EditText quando ativado -->
+        <item name="colorAccent">@color/blue</item> <!-- Cor do cursor do EditText -->
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Definir cores -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorControlNormal">@color/blue</item> <!-- Cor da linha do EditText -->
+        <item name="colorControlActivated">@color/blue</item> <!-- Cor da linha do EditText quando ativado -->
+        <item name="colorAccent">@color/blue</item> <!-- Cor do cursor do EditText -->
+    </style>
+
+    <style name="Theme.AbastecendoCerto" parent="Base.Theme.AbastecendoCerto" />
+</resources>

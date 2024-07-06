@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_combustivel_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tipo_de_combust_vel_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <EditText
+            android:id="@+id/et_combustivel_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:inputType="text"
+            android:outlineAmbientShadowColor="@color/blue"
+            android:outlineSpotShadowColor="@color/blue"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel_1"
+            tools:ignore="LabelFor" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/km_por_l_1_edit_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:hint="@string/km_l"
+            app:boxStrokeColor="@color/blue"
+            app:cursorColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/et_combustivel_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/km_por_l_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_combustivel_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/tipo_de_combust_vel_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_combustivel_1" />
+
+        <EditText
+            android:id="@+id/et_combustivel_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel_2"
+            tools:ignore="LabelFor" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/_edit_text2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/blue"
+            app:cursorColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            android:textColorHint="@color/black"
+            android:hint="@string/km_l"
+            app:layout_constraintStart_toEndOf="@+id/et_combustivel_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel_2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/km_por_l_2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                tools:ignore="TextContrastCheck" />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_valor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            android:text="@string/valor_combust_vel_1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_combustivel_2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valor_1_edit_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_valor1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/valor_1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="#546E7A"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_valor_combustivel_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="@string/valor_combust_vel_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/et_combustivel_2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valor_2_edit_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_valor_combustivel_2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/valor_2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="#546E7A"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_calcular_menor_preco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/calcular"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valor_1_edit_text"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_limpar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/limpar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/valor_2_edit_text"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btn_buscar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button_bg"
+            android:elevation="4dp"
+            android:importantForAccessibility="no"
+            android:padding="12dp"
+            android:src="@drawable/baseline_search_24"
+            app:layout_constraintStart_toEndOf="@+id/km_por_l_1_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel_1" />
+
+        <ImageButton
+            android:id="@+id/btn_buscar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button_bg"
+            android:elevation="4dp"
+            android:importantForAccessibility="no"
+            android:padding="12dp"
+            android:src="@drawable/baseline_search_24"
+            app:layout_constraintStart_toEndOf="@+id/_edit_text2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_combustivel_2" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="4dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_escrita" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

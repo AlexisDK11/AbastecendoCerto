@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Abastecendo Certo</string>
+    <string name="tipo_de_combust_vel_1">Tipo de Combustível 1:</string>
+    <string name="km_l">km/l</string>
+    <string name="tipo_de_combust_vel_2">Tipo de Combustível 2:</string>
+    <string name="valor_combust_vel_1">Valor combustível 1:</string>
+    <string name="valor_combust_vel_2">Valor combustível 2:</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+</resources>
